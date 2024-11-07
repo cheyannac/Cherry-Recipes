@@ -56,8 +56,8 @@ nav {
 }
 
 nav ul li {
-    display: inline-block
-    list-item:none
+    display:inline-block;
+    list-style: none;
     margin-left: 10px 30px;
 }
 
