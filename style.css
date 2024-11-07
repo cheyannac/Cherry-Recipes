@@ -1,3 +1,4 @@
+/* Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -5,9 +6,23 @@
 }
 
 body {
-    font-family:cursive, sans-serif;
-    line-height: 1.6;
-    background-color: #fff8f0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('v807-mynt-03.jpg');
+    background-size: cover;
+    color: #333;
+}
+
+header {
+    background-color: #d4183a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
@@ -16,15 +31,13 @@ body {
 }
 
 .logo-img {
-    width: 10px; /* Adjust size as needed */
-    height: 10px; /* Adjust size as needed */
-    margin-right: 10px; /* Space between logo and title */
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
 }
 
-header h1 {
+h1 {
     font-size: 2.5rem;
-    font-weight: bold;
-    color: white;
 }
 
 nav ul {
@@ -33,82 +46,83 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 20px;
+    margin-left: 15px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: 1.2rem;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
+    font-weight: 600;
 }
 
 main {
     padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
-.hero {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.hero h2 {
-    font-size: 2rem;
-    color: #d4183a;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    color: #555;
+.intro {
+    margin-bottom: 20px;
 }
 
 .recipes {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
 }
 
-.recipe-card {
-    background-color: white;
+.recipe {
+    background-color: #fff8f0;
+    padding: 20px;
     border: 1px solid #ddd;
     width: 250px;
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-.recipe-card img {
+.recipe-img {
     width: 100%;
     height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
-.recipe-card h3 {
-    color: #d4183a;
-    font-size: 1.5rem;
-    margin: 15px 0;
+.ingredients {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
 }
 
-.recipe-card p {
-    color: #555;
+.media {
+    margin: 20px 0;
+    text-align: center;
 }
 
-.recipe-card a {
-    text-decoration: none;
-    color: #d4183a;
-    font-weight: bold;
-}
-
-.recipe-card a:hover {
-    text-decoration: underline;
+.video, .audio {
+    margin: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
 }
 
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     background-color: #d4183a;
     color: white;
+}
+
+footer nav ul {
+    display: inline-flex;
+}
+
+footer nav ul li {
+    margin-left: 15px;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
 }

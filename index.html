@@ -1,62 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cherry Recipes</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cherry Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link to a custom font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header with logo and navigation -->
     <header>
-        <div class="logo">
-            <img src="cherry-logo-icon-png (1).webp" alt="Cherry Recipes Logo" class="logo-img">
-            <h1>Cherry Recipes</h1>
+        <div class="banner">
+            <div class="logo">
+                <img src="cherry-logo.png" alt="Cherry Logo" class="logo-img">
+                <h1>Cherry Recipes</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#recipes">Recipes</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Recipes</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
-  <section id="home" class="hero">
-    <h1>Welcome to Cherry Recipes</h1>
-    <p>Your ultimate source for delicious cherry-inspired recipes.</p>
-  </section>
+    <!-- Main content area with sections for recipes, images, and media -->
+    <main>
+        <section class="intro" id="home">
+            <h2>Welcome to Cherry Recipes</h2>
+            <p>Discover delicious cherry-inspired cakes, pies, and more! Our recipes use fresh, juicy cherries to bring you delightful flavors in every bite.</p>
+        </section>
 
-  <section id="recipes" class="recipe-section">
-    <h2>Featured Recipes</h2>
-    <div class="recipes">
-      <div class="recipe-card">
-        <h3>Cherry Pie</h3>
-        <p>A classic cherry pie with a flaky, buttery crust.</p>
-      </div>
-      <div class="recipe-card">
-        <h3>Cherry Smoothie</h3>
-        <p>A refreshing smoothie with fresh cherries and yogurt.</p>
-      </div>
-      <div class="recipe-card">
-        <h3>Cherry Chocolate Cake</h3>
-        <p>A rich, moist cake with cherries and chocolate.</p>
-      </div>
-    </div>
-  </section>
+        <!-- Recipe section with images and content for cakes and pies -->
+        <section class="recipes" id="recipes">
+            <h2>Featured Recipes</h2>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>Cherry Recipes is dedicated to bringing you the best cherry-inspired recipes from around the world.</p>
-  </section>
+            <!-- Recipe 1: Cherry Cake -->
+            <div class="recipe" id="cherry-cake">
+                <h3>Cherry Cake</h3>
+                <img src="cherry-cake.jpg" alt="Cherry Cake" class="recipe-img">
+                <p>This cherry cake is moist, fluffy, and packed with cherry flavor! Perfect for any celebration.</p>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>If you have any questions, feel free to <a href="mailto:info@cherryrecipes.com">email us</a>.</p>
-  </section>
+                <!-- List of ingredients -->
+                <ul class="ingredients">
+                    <li>2 cups flour</li>
+                    <li>1 cup sugar</li>
+                    <li>1 cup cherries, pitted and chopped</li>
+                    <li>1/2 cup butter</li>
+                    <li>3 eggs</li>
+                    <li>1 tsp vanilla extract</li>
+                </ul>
+            </div>
 
-  <footer>
-    <p>&copy; 2024 Cheyanna's Capstone. All rights reserved.</p>
-  </footer>
+            <!-- Recipe 2: Cherry Pie -->
+            <div class="recipe" id="cherry-pie">
+                <h3>Cherry Pie</h3>
+                <img src="cherry-pie.jpg" alt="Cherry Pie" class="recipe-img">
+                <p>A classic cherry pie with a flaky crust and sweet filling. Enjoy a slice of this comforting dessert.</p>
+
+                <!-- List of ingredients -->
+                <ul class="ingredients">
+                    <li>2 cups cherries, pitted</li>
+                    <li>1/2 cup sugar</li>
+                    <li>2 tbsp cornstarch</li>
+                    <li>1 pie crust</li>
+                    <li>1 tbsp butter</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Media section for video, audio, and additional links -->
+        <section class="media">
+            <h2>Recipe Media</h2>
+            <div class="video">
+                <video controls width="300">
+                    <source src="cherry-cake-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Watch our cherry cake tutorial video.</p>
+            </div>
+            <div class="audio">
+                <audio controls>
+                    <source src="cherry-recipe-audio.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p>Listen to our cherry recipe tips audio.</p>
+            </div>
+            <p>For more cherry recipe ideas, visit 
+                <a href="https://www.allrecipes.com" target="_blank">All Recipes</a>.
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer with navigation links and copyright -->
+    <footer>
+        <p>&copy; 2024 Cherry Recipes | All rights reserved.</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#recipes">Recipes</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>
