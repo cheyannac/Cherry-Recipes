@@ -5,8 +5,13 @@
     box-sizing: border-box;
 }
 
+
 body {
-    font-family: 'Poppins', sans-serif;
+.alice-regular {
+  font-family: "Alice", serif;
+  font-weight: 400;
+  font-style: normal;
+}
     background-image: url("v807-mynt-03.jpg");
     background-size: cover;
     background-position: center top;
@@ -33,9 +38,9 @@ header {
 }
 
 .logo-img {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
+    width: 5px;
+    height: 5px;
+    margin-right: 15px;
 }
 
 h1 {
@@ -59,7 +64,7 @@ nav ul li a {
 
 main {
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(229, 190, 205, 0.9);
 }
 
 .intro {
@@ -85,8 +90,8 @@ main {
 }
 
 .recipe-img {
-    width: 100%;
-    height: auto;
+    width: 50%;
+    height: 50%;
     border-radius: 5px;
     margin-bottom: 10px;
 }
