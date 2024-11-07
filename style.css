@@ -63,6 +63,10 @@ nav ul li a {
 }
 
 main {
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
+    
     padding: 20px;
     background-color: rgba(229, 190, 205, 0.9);
 }
@@ -109,7 +113,7 @@ main {
 
 .video, .audio {
     margin: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #ffbcbc;
     padding: 10px;
     background-color: #fff;
 }
@@ -118,7 +122,7 @@ footer {
     text-align: center;
     padding: 15px;
     background-color: #d4183a;
-    color: white;
+    color: rgb(232, 193, 193);
 }
 
 footer nav ul {
